@@ -1,0 +1,192 @@
+body
+	{
+		
+		background: #181818;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 12pt;
+		font-weight: 200;
+		color: #FFF;
+	}
+
+	ol, ul
+	{
+			list-style: none;
+	}
+	a
+	{
+		color: #ee0000;
+	}
+	.card {
+     background-color: #181818;
+     padding: 20px;
+   
+}
+	#header
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #111111 url(images/header-bg.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#header_title 
+	{
+		padding-top: 1.5em;
+		text-align: center;
+		
+	}
+	#header_title h1
+	{
+		font-size: 1.7em;
+		color: #79C255;
+	}
+	#header_title a
+	{
+		text-decoration: none;
+		color:#fff;
+	}
+
+
+
+
+	#menu
+	{
+			padding-top: 5em;
+			padding-bottom:10em;
+			margin-left:0.2em;
+	}
+	
+	#menu li
+	{
+			float: left;   
+	}
+	
+	#menu li a, #menu li span
+	{
+	
+	/*	letter-spacing: 0.5px;*/
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1em;
+		color: rgba(255,255,255,0.80);
+	}
+	#menu li:hover a, #menu li.active a
+	{
+		background: #2651a8;
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+	}
+
+
+
+.dropdown-content {
+     float:none;
+	display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+
+    display: block;
+}
+
+	.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+#subtitle
+{
+	 text-align:center;
+	 font-size:30px;
+	 padding-top:20px;
+}
+.columns {
+    float: left;
+    width: 33%;
+	
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.books:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.books .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+	text-align:center;
+}
+.books li {
+  background-color:#fff;
+  color:#000;
+    text-align: center;
+	font-size:15px;
+	font-family: 'sans-serif';
+	
+}
+.search {
+  width: 100%;
+  position: relative
+
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #2651a8;
+  padding: 5px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size:25px;
+}
+
+.searchTerm:focus{
+  color: #2651a8;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -56px;
+  width: 45px;
+  height: 41px;
+  border: 1px #2651a8;
+  background: #2651a8;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+#footer
+{
+	padding:30px;
+	
+	background-color:black;
+}
+
+#footer p
+{
+	letter-spacing: 0.30em;
+	text-align: center;
+	font-size: 1em;
+	color: rgba(255,255,255,0.4);
+
+}

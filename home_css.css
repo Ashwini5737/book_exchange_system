@@ -1,0 +1,168 @@
+body
+	{
+		
+		background: #181818;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 12pt;
+		font-weight: 200;
+		color: #FFF;
+	}
+
+	ol, ul
+	{
+			list-style: none;
+	}
+	a
+	{
+		color: #ee0000;
+	}
+	
+	#header-wrapper
+	{
+		position: relative;
+		padding: 5em 10em 7em 0em;
+		background: #111111 url(images/header-bg.jpg) no-repeat center;
+		background-size: cover;
+
+	}
+#logo
+	{
+		position: absolute;
+		top: 3.6em;
+		left: 0;
+	}
+	
+	#logo h1, a
+	{
+		font-size: 1.5em;
+		text-decoration: none;
+		padding-left:50px;
+		color: white;
+	}
+		
+#menu
+	{
+			padding-top: 4em;
+	}
+	
+	#menu li
+	{
+			float: right;   
+	}
+	
+	#menu li a, #menu li span
+	{
+		padding: 1em 1.2em;
+		letter-spacing: 0.5px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1em;
+		color: rgba(255,255,255,0.80);
+	}
+	#menu li:hover a, #menu li.active a
+	{
+		background: #2651a8;
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+	}
+
+
+	
+#banner
+	{
+		padding-top: 17em;
+		text-align: center;
+	}
+	/*search bar_______________*/
+	
+	.search {
+  width: 100%;
+  position: relative;
+  padding-bottom:100px;
+
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #2651a8;
+  padding: 5px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size:25px;
+}
+
+.searchTerm:focus{
+  color: #2651a8;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -56px;
+  width: 45px;
+  height: 41px;
+  border: 1px #2651a8;
+  background: #2651a8;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+	.columns {
+    float: left;
+    width: 50%;
+
+}
+#right {
+	font-size:1.2em;
+	
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	#welcome
+	{
+		position: relative;
+		padding: 7em 0em 7em 0em;
+		background: #2651a8;
+		background-size: cover;
+		text-align: center;
+	}
+	
+	#welcome .container
+	{
+		width: 1000px;
+		padding: 0px 100px;
+		color: rgba(255,255,255,0.8);
+	}
+	
+	
+#footer
+{
+	padding:30px;
+	background-color:black;
+}
+
+#footer p
+{
+	letter-spacing: 0.30em;
+	text-align: center;
+	font-size: 1em;
+	color: rgba(255,255,255,0.4);
+
+}

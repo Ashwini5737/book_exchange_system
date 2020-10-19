@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="account_css.css">
+
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="#notifications"><i class="fa fa-fw fa-wrench"></i> Notifications</a>
+  <a href="#aboutme"><i class="fa fa-fw fa-user"></i> About me</a>
+  <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+
+
+
+<div id="notifications" class="main">
+	
+<h2>Request For Book Exchange</h2>
+
+<form>
+  <div class="container row">
+    <div class="info">
+   	 	<h2>Book-name</h2>
+    	<p>description</p>
+    </div>
+    <div class="pic">
+    	<img src="images/twillight.jpg">
+    </div>
+  </div>
+
+  <div class="container row" style="background-color:white">
+    <h3>Details of user who has requested </h3>
+    <div class="info">
+    <h4>Name of person </h4> 
+    <p>Email address of person </p>
+  	<p>Gender</p>
+    <input id="btnfbooks" type="submit" value="viewbooks" onclick='window.location.href ="addbook_php.php"'>
+    </div>
+    <div class="pic">
+    	<img src="images/person.png" height="200px">
+    </div>
+  </div>
+
+  <div class="container">
+  	<h2 id="name_requester"> requester</h2>
+    wants it for <span id="days"> __ </span>no. of days.
+    <p>But ofcourse you can negotiate later</p>
+  </div>
+  <br><br>
+  <div class="container">
+  	<h2>Do you want to exchange??</h2>
+    <input id="btn1" type="button" value="YES!!!" onclick="document.getElementById('id01').style.display='block'">
+    <input id="no-button" type="submit" value="NO">
+  </div>
+</form>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+<div class="imgcontainer">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+</div>
+    <div class="container">
+      <label for="noofdays"><b>No Of Days</b></label>
+     <!---<input type="text" placeholder="Enter how many days" name="noofdays">--->
+     <select>
+     <option value="4">4</option>
+  <option value="8">8</option>
+  <option value="12">12</option>
+  <option value="15">15</option>
+  <option value="1">1 month</option>
+    </select>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    </div>
+
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="aboutme" class="main">
+	<br><br>
+<form>
+	<div class="container">
+		<h2>About Me</h2>
+        
+    </div>
+     <div class="container row" style="background-color:white">
+     <hr>
+  	<img src="images/person.png" height="200px" style="margin-left:300px">
+    <br>
+      <label for="FName"><b>Firstname</b></label>
+      <input type="text" placeholder="Enter your firstname" name="FName" required>
+
+      
+      <label for="LName"><b>Lastname</b></label>
+      <input type="text" placeholder="Enter your lastname" name="LName" required>
+
+      <label for="place"><b>Place</b></label>
+      <input type="text" placeholder="Enter your place" name="place" required>
+
+      <label for="mob"><b>Mobile No</b></label>
+      <input type="tel" placeholder="Enter your mobile number" name="mobno" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      
+      <input type="submit" value="Save">
+</form>
+
+</div>
+<div id="footer" class="container" >
+	<p>Book Exchange Website</p>
+</div>
+
+</body>
+</html> 

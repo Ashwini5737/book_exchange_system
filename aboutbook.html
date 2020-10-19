@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+
+<head>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<meta charset="UTF-8">
+
+<title>Table</title>
+
+<style>
+#below { 
+   height:600px; 
+   width:100%; 
+   
+}
+#up { 
+   height:500px; 
+   width:100%; 
+   
+}
+h1 {
+text-align:center;
+}
+img {
+    float: right;
+}
+p {
+ margin-left: 100px; 
+ padding: 35px;
+height:300px;
+font-size:22px;
+}
+
+button {
+    background-color: Black;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 1000px;
+    cursor: pointer;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+select {
+width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 350px;
+    top: 120px;
+    width: 50%; /* Full width */
+    height: 60%; /* Full height */
+    background-color: rgb(0,0,0);  /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffe0;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+<h1>ABOUT BOOK</h1>
+<div id="up">
+<p><img src="images/bk18.jpg"  style="width:250px;height:250px;margin-left:15px;">
+A book is both a usually portable physical object and the immaterial ideal or intellectual object or body of representations whose material signs—written or drawn lines or other two-dimensional media—the physical object contains or houses. 
+As a physical object, a book is a stack of usually rectangular pages (made of papyrus, parchment, vellum, or paper) oriented with the shorter sides at top and bottom, and with one longer side (either left or right, depending on the direction in which one reads a script) tied, sewn, or otherwise fixed together, so that each sheet of the stack can be turned easily from the face of the underlying sheet, the whole stack then protected because bound to a cover of heavier and usually relatively inflexible paper or other material, each face of which is connected to a spine, a flexible strip tied, sewn, pasted or otherwise fixed to the stack so that, as one fans through the pages and the left stack acquires enough volume and mass, the book can lie flat.[1] The technical term for this physical arrangement is codex (in the plural, codices). In the history of hand-held physical supports for extended written compositions or records, the codex replaces its immediate predecessor, the scroll. </p>
+</div>
+<div id="below">
+<div class="table-users">
+
+<div class="header">Users</div>
+
+<table cellspacing="0">
+
+<tr>
+
+<col width="200">
+<col width="400">
+<col width="400">
+
+<th>Select</th>
+<th>Name</th>
+
+<th>Place</th>
+
+</tr>
+
+
+
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+                 <div class="radio">
+                      <input type="radio" name="optradio">
+                 </div>
+            </td>
+
+<td></td>
+<td></td>
+</tr>
+</table>
+</div>
+
+
+<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Request</button>
+
+</div>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+<div class="imgcontainer">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+</div>
+    <div class="container">
+      <label for="noofdays"><b>No Of Days</b></label>
+     <!---<input type="text" placeholder="Enter how many days" name="noofdays">--->
+     <select>
+     <option value="4">4</option>
+  <option value="8">8</option>
+  <option value="12">12</option>
+  <option value="15">15</option>
+  <option value="1">1 month</option>
+    </select>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    </div>
+
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+
+
+</html>

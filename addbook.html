@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+      background-repeat: no repeat;
+      width: 100% ;
+      background: Black;
+   }
+form {border: 2px solid #f1f1f1;
+      width: 50%;
+      margin-left: 300px;
+      margin-top: 100px;
+      background: Gray;
+     }
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.close {
+    position: absolute;
+    right: 365px;
+    top: 135px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+h2 {text-align: center;
+    font-size : 40px;
+    color: White;}
+<!----button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}----->
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  
+}
+.subbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: Gray;
+    margin-left: 450px;
+}
+
+.columns {
+    float: left;
+    width: 50%;
+	
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+#footer
+{
+	padding:30px;
+	background-color:black;
+}
+
+#footer p
+{
+	letter-spacing: 0.30em;
+	text-align: center;
+	font-size: 1em;
+	color: rgba(255,255,255,0.4);
+
+}
+
+}
+</style>
+</head>
+<body>
+
+<h2>Add Books</h2>
+
+  <form action="addbook.php" method="post">
+  
+
+  <div class="container">
+    <label for="bname"><b>Book Name</b></label>
+    <input type="text" placeholder="Enter book name" name="bname" required>
+
+    <label for="athname"><b>Author</b></label>
+    <input type="text" placeholder="Enter author name" name="athname" required>
+   
+    <label for="des"><b>Description</b></label>
+    <input type="text" placeholder="Enter descryption of book" name="des" required>
+
+    <label for="cat"><b>Categories</b></label>
+    <select name="cat">
+    <!---<input type="text" placeholder="Enter book category" name="cat" required>---->
+     <option value="Children">Childeren's</option>
+  <option value="mysteries">Mysteries/thriller</option>
+  <option value="horror">Horror</option>
+  <option value="fiction">Fiction</option>
+  <option value="romance">Romance</option>
+  <option value="fantasy">Fantasy</option>
+  <option value="series">Series</option>
+  <option value="general">General</option>
+    </select>
+      
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <!---<button type="button" class="cancelbtn">Cancel</button>---->
+    <button type="submit" class="subbtn">Done</button>
+  </div>
+
+  </form>
+<div id="footer" class="container">
+	<p>Book Exchange Website</p>
+</div>
+</body>
+</html>
